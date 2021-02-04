@@ -1,0 +1,261 @@
+/* html {
+  This defines what 1rem is
+  font-size: 62.5%;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e7e7e7;
+  font-family: arial;
+  color: #e7e7e7;
+  font-size: 10px;
+}
+
+.main-content {
+  margin-top: 2rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.top-nh {
+  color: blueviolet;
+  font-size: 2.5em;
+}
+.top-news-item {
+  position: relative;
+  height: 15rem;
+  border-radius: 3px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 0, 0, 0),
+    rgba(89, 0, 255, 0.596)
+  );
+}
+.top-news-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.15;
+  /* overflow: hidden; */
+  /* z-index: -1; */
+}
+.top-news-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.top-news-desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -40%);
+  /* background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 0, 0, 0),
+    rgba(89, 0, 255, 0.596)
+  ); */
+}
+.post-tag {
+  text-transform: uppercase;
+  background-color: rgba(32, 167, 32, 0.937);
+  border-radius: 3px;
+  padding: 0.3rem 1rem;
+  display: inline-block;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+
+.post-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.post-title a {
+  color: #e7e7e7;
+  text-decoration: none;
+}
+
+.post-title a:hover {
+  color: #e7e7e7;
+  text-decoration: underline;
+}
+.cover-byline {
+  padding: 0;
+  list-style: none;
+}
+
+.cover-byline li {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+/* .l-blog {
+  border: 1px solid black;
+  height: 100%;
+} */
+/* .latest-news {
+  border: 1px solid green;
+} */
+
+/* Sidebar styles */
+.side-bar {
+  color: #4caf50;
+}
+
+.side-bar .section {
+  background: white;
+  padding: 20px;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.side-bar .section.search {
+  margin-top: 3rem;
+}
+.text-input {
+  margin-top: 0.3rem;
+  padding: 0.5rem 1rem;
+  display: block;
+  width: 100%;
+  border: 1px solid lightslategray;
+  border-radius: 5px;
+  outline: none;
+  color: #444;
+  font-size: 0.8rem;
+}
+
+.side-bar .section.topics ul {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.side-bar .section.topics ul li a {
+  color: #4caf50;
+  display: block;
+  text-decoration: none;
+  padding: 15px 0px 15px 0px;
+  border-bottom: 1px solid lightslategray;
+  transition: all 0.3s;
+}
+
+.side-bar .section.topics ul li a:hover {
+  padding-left: 10px;
+  transition: all 0.3s ease-in;
+}
+
+/* Pagination style*/
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.paginate {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #eee;
+  margin-top: 0.8rem;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.pagination li {
+  margin: 0 1px;
+}
+
+.pagination a {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 1px solid #999;
+  border-radius: 0.2em;
+  text-decoration: none;
+}
+
+.pagination a[aria-current="page"] {
+  background-color: #333;
+  color: #fff;
+}
+
+.ad {
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+.ad h3 {
+  color: rgb(108, 18, 131);
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+/* Style the form element with a border around it */
+form {
+  border: 4px solid #f1f1f1;
+}
+
+/* Add some padding and a grey background color to containers */
+.form-container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+.form-container > * {
+  color: #444;
+}
+.spam-text {
+  color: rgba(255, 38, 0, 0.897);
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+/* Style the input elements and the submit button */
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type="checkbox"] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+@media screen and (min-width: 720px) {
+  .top-nh {
+    font-size: 2rem;
+  }
+}
