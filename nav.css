@@ -8,7 +8,7 @@ header {
       rgba(11, 155, 47, 0.555) 30%,
       rgba(27, 26, 26, 0.671)
     ),
-    url("/img/business-newspaper.jpg");
+    url("./img/business-newspaper.jpg");
   min-height: 300px;
   /* Center and scale the image nicely */
   background-position: center;
